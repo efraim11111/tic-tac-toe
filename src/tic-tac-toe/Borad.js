@@ -5,6 +5,7 @@ import Strike from "./Strike"
 const Borad = ({tiles ,onTileClick,playerTurn ,strike}) => {
   return (
     <div className={`board`}>
+      <h2>heloo there u pourerewrewrewrew</h2>
        <Tile playerTurn={playerTurn} onClick={()=>onTileClick(0)} value={tiles[0]} className='border_bottom border_right'/>
        <Tile playerTurn={playerTurn} onClick={()=>onTileClick(1)} value={tiles[1]} className='border_bottom border_right'/>
        <Tile playerTurn={playerTurn} onClick={()=>onTileClick(2)} value={tiles[2]} className='border_bottom '/>
