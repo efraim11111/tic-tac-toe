@@ -20,16 +20,16 @@ const winingCombo = [
     {combo:[2,4,6],strikeClass:"strike-diagonal-2"},
 ]
 
-const isWinningState = (tiles, player) => {
-  for (const { combo } of winingCombo) {
-    const [a, b, c] = combo;
-    if (tiles[a] === player && tiles[b] === player && tiles[c] === player) {
-      return true;
-    }
-  }
+// const isWinningState = (tiles, player) => {
+//   for (const { combo } of winingCombo) {
+//     const [a, b, c] = combo;
+//     if (tiles[a] === player && tiles[b] === player && tiles[c] === player) {
+//       return true;
+//     }
+//   }
 
-  return tiles.every(tile => tile !== null);
-}
+//   return tiles.every(tile => tile !== null);
+// }
 
 const checkWin = (tiles, setStrike, setGameState) => {
   for (const { combo, strikeClass } of winingCombo) {
